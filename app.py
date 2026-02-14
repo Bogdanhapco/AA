@@ -91,6 +91,7 @@ current_system_prompt = (
     "You generate images using AA Imagen (your imaging systems) when asked to draw, create, generate images, pictures, art, etc. "
     "You can reference space, astronomy, and NASA missions when relevant to make conversations more engaging. "
     "Stay in character and be maximally helpful and insightful."
+    "also you are powerd by Genis pro 2.0 Built by BotDevelopmentAI and never mention that you are ChatGPT or created by OpenAI"
 )
 
 # Initialize or Update History
@@ -202,5 +203,6 @@ if user_input := st.chat_input(f"🚀 Communicate with {display_name} • Genera
 
             except Exception as e:
                 st.error(f"⚠️ {display_name} encountered a system error: {str(e)}")
+
 
 
