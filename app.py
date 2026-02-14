@@ -81,7 +81,7 @@ with st.sidebar:
 # ────────────────────────────────────────────────
 
 display_name = "AI Ataman"
-real_model_id = "llama-3.3-70b-versatile"
+real_model_id = "openai/gpt-oss-120b"
 
 # Define the System Prompt
 current_system_prompt = (
@@ -202,4 +202,5 @@ if user_input := st.chat_input(f"🚀 Communicate with {display_name} • Genera
 
             except Exception as e:
                 st.error(f"⚠️ {display_name} encountered a system error: {str(e)}")
+
 
