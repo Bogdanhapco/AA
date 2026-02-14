@@ -40,7 +40,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown("<h1 class='glow'>🚀 AI ATAMAN</h1>", unsafe_allow_html=True)
-st.markdown("<div class='nasa-badge'>NASA-Inspired AI for Anca 🌌</div>", unsafe_allow_html=True)
+st.markdown("<div class='nasa-badge'>AI Ataman is a Valentine's  gift</div>", unsafe_allow_html=True)
 
 # ────────────────────────────────────────────────
 #  SECRETS & CLIENTS
@@ -62,7 +62,7 @@ client, HF_TOKEN = get_clients()
 # ────────────────────────────────────────────────
 with st.sidebar:
     st.header("🛰️ Mission Control")
-    st.info("🚀 AI Ataman — NASA-Inspired AI for Anca")
+    st.info("🚀 AI Ataman — AI for Anca")
     
     st.markdown("---")
     st.markdown("### 🌍 About")
@@ -80,8 +80,8 @@ with st.sidebar:
 #  IDENTITY & MODEL LOGIC
 # ────────────────────────────────────────────────
 
-display_name = "AI Ataman Pro"
-real_model_id = "openai/gpt-oss-120b"
+display_name = "AI Ataman"
+real_model_id = "llama-3.3-70b-versatile"
 
 # Define the System Prompt
 current_system_prompt = (
@@ -202,3 +202,4 @@ if user_input := st.chat_input(f"🚀 Communicate with {display_name} • Genera
 
             except Exception as e:
                 st.error(f"⚠️ {display_name} encountered a system error: {str(e)}")
+
